@@ -6,11 +6,11 @@ function toggleDarkMode() {
 // random compliment
 function giveCompliment() {
   const msgs = [
-    "you’re doing fine",
-    "this project won’t beat you",
-    "take a break if you need one",
-    "you got this",
-    "keep going"
+    "you’re killing it",
+    "you’re smarter than you think",
+    "this project is lucky to have you",
+    "you’re unstoppable",
+    "you’re actually built for this"
   ];
 
   const pick = Math.floor(Math.random() * msgs.length);

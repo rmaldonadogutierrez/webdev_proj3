@@ -66,7 +66,6 @@ const sliderImages = [
   "images/img_8098.jpg"
 ];
 
-
 let currentSlide = 0;
 
 function changeSlide() {

@@ -172,6 +172,23 @@ body.page3 {
 }
 
 /* -------------------------------------- */
+/* DARK MODE FIXES FOR PAGE BACKGROUNDS */
+/* -------------------------------------- */
+
+.dark-mode.index {
+  background-color: #2b2b2b;
+}
+
+.dark-mode.resume main {
+  background-color: #3a3a3a;
+  border-color: #666;
+}
+
+.dark-mode.page3 {
+  background-color: #2b2b2b;
+}
+
+/* -------------------------------------- */
 /* MEDIA QUERY — TABLET SIZE */
 /* -------------------------------------- */
 @media (min-width: 600px) {

@@ -61,10 +61,11 @@ function initMap() {
 
 // image slider
 const sliderImages = [
-  "images/pic1.jpg",
-  "images/pic2.jpg",
-  "images/pic3.jpg"
+  "images/img_0701.JPG",
+  "images/img_3612.jpg",
+  "images/img_8098.jpg"
 ];
+
 
 let currentSlide = 0;
 

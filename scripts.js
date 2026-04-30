@@ -20,24 +20,57 @@ function giveCompliment() {
 // google map
 function initMap() {
   const chicago = { lat: 41.8781, lng: -87.6298 };
+  const pokePoke = { lat: 41.8835, lng: -87.6260 };
 
   const map = new google.maps.Map(document.getElementById("map"), {
-    zoom: 12,
+    zoom: 13,
     center: chicago,
     mapTypeId: "hybrid"
   });
 
-  const marker = new google.maps.Marker({
+  // Chicago marker
+  const chicagoMarker = new google.maps.Marker({
     position: chicago,
     map: map,
     title: "Chicago"
   });
 
-  const info = new google.maps.InfoWindow({
+  const chicagoInfo = new google.maps.InfoWindow({
     content: "<p>Chicago :)</p>"
   });
 
-  marker.addListener("click", () => {
-    info.open(map, marker);
+  chicagoMarker.addListener("click", () => {
+    chicagoInfo.open(map, chicagoMarker);
+  });
+
+  // Poke Poke marker
+  const pokeMarker = new google.maps.Marker({
+    position: pokePoke,
+    map: map,
+    title: "Poke Poke (Wabash)"
+  });
+
+  const pokeInfo = new google.maps.InfoWindow({
+    content: "<p>Poke Poke — my favorite lunch spot!</p>"
+  });
+
+  pokeMarker.addListener("click", () => {
+    pokeInfo.open(map, pokeMarker);
   });
 }
+
+// image slider
+const sliderImages = [
+  "images/pic1.jpg",
+  "images/pic2.jpg",
+  "images/pic3.jpg"
+];
+
+let currentSlide = 0;
+
+function changeSlide() {
+  currentSlide = (currentSlide + 1) % sliderImages.length;
+  document.getElementById("slider-img").src = sliderImages[currentSlide];
+}
+
+setInterval(changeSlide, 2500);

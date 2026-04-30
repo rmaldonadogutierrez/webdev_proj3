@@ -156,6 +156,8 @@ body.page3 {
   font-size: 0.9rem;
   color: #4a2c2a;
 }
+
+/* DARK MODE */
 .dark-mode {
   background-color: #2b2b2b;
   color: #fff;
@@ -167,4 +169,40 @@ body.page3 {
 
 .dark-mode a {
   color: #ffb6d9;
+}
+
+/* -------------------------------------- */
+/* MEDIA QUERY — TABLET SIZE */
+/* -------------------------------------- */
+@media (min-width: 600px) {
+  main {
+    padding: 3rem;
+  }
+
+  header ul {
+    gap: 3rem;
+  }
+
+  img {
+    max-width: 80%;
+  }
+}
+
+/* -------------------------------------- */
+/* MEDIA QUERY — DESKTOP SIZE */
+/* -------------------------------------- */
+@media (min-width: 900px) {
+  main {
+    max-width: 1000px;
+    margin: auto;
+  }
+
+  p {
+    font-size: 1.1rem;
+    line-height: 1.9;
+  }
+
+  header ul {
+    padding: 2rem;
+  }
 }
